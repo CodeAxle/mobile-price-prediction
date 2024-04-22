@@ -3,7 +3,7 @@
 ## Software and account Required
 
 1.[Github Account](https://github.com)
-2.[AWS Account]()(https://aws.amazon.com)
+2.[AWS Account]()
 3.[VS Code IDE](https://code.visualstudio.com/download)
 4.[GIT cli](https://git-scm.com/downloads)42A5-E86E
 

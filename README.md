@@ -20,6 +20,7 @@ OR
 conda activate venv
 ```
 
+Making important installations
 ```
 pip install -r requirements.txt
 ```

@@ -1,6 +1,5 @@
 
-import xgboost
-from xgboost import XGBClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import accuracy_score,classification_report, confusion_matrix, precision_score,recall_score
 import sklearn
 import joblib 
@@ -22,6 +21,7 @@ if __name__ =='__main__':
     parser = argparse.ArgumentParser()
 
     # hyperparameters sent by the client are passed as command-line arguments to the model
+    parser.add_argument("--learning_rate", type=float, default=0.1)
     parser.add_argument("--n_estimators", type=int, default=2)
     parser.add_argument("--max_depth", type=int, default=2)
 
@@ -70,9 +70,9 @@ if __name__ =='__main__':
     print(y_test.shape)
     print()
 
-    print("Training XGBoost Model.....")
+    print("Training Boosting Model.....")
     print()
-    model = XGBClassifier(n_estimators=args.n_estimators, max_depth=args.max_depth)
+    model = GradientBoostingClassifier(n_estimators=args.n_estimators, max_depth=args.max_depth)
     model.fit(X_train,y_train)
     print()
 

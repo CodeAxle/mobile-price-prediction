@@ -72,7 +72,7 @@ if __name__ =='__main__':
 
     print("Training Boosting Model.....")
     print()
-    model = GradientBoostingClassifier(n_estimators=args.n_estimators, max_depth=args.max_depth)
+    model = GradientBoostingClassifier(n_estimators=args.n_estimators, max_depth=args.max_depth, learning_rate=args.learning_rate)
     model.fit(X_train,y_train)
     print()
 

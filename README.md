@@ -25,6 +25,8 @@ Making important installations
 pip install -r requirements.txt
 ```
 
+Note: Before making commit to github mention venv/ (virtual environment/) in .gitignore to avoid error due to large file size.
+
 To Add files to git
 ```
 git add .

@@ -56,3 +56,5 @@ To check remote url
 ```
 git remote -v
 ```
+
+Refer AWS sagemaker SDK model training documentation:https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-python-sdk/scikit_learn_randomforest/Sklearn_on_SageMaker_end2end.ipynb
